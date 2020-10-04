@@ -9,18 +9,64 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 900;
 }
 
+legend {
+  font-family: 'Montserrat', sans-serif;
+  padding: 0% 15% 7%;
+  font-weight: 900;
+  font-size: 2.5rem;
+  line-height: 1.5;
+  text-align: left;
+}
+
 p {
   color: #154360;
 }
+
+/* Calculator */
+
+form {
+  text-align: center;
+  padding: 0 10% 10%;
+}
+
+@media (max-width: 1028px) {
+  legend {
+    text-align: center;
+  }
+}
+
+form h4 {
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+}
+
+@media (min-width: 1028px) {
+  form h4 {
+    text-align: left;
+    padding-left: 15%;
+  }
+}
+
+.calculator-section {
+    font-size: 1.25rem;
+  font-weight: 900;
+}
+
 
 /* Headings */
 
 .big-heading {
   font-size: 3.5rem;
   line-height: 1.5;
-  border-left: 5px solid rgba(133, 180, 192, 0.699);
-  border-spacing: 25px;
-  border-collapse: separate;
+}
+
+.big-heading-alt {
+  font-size: 3.5rem;
+  line-height: 1.5;
+  color: darkcyan;
+  background-color: white;
+  padding: 10px;
 }
 
 .section-heading {
@@ -44,6 +90,7 @@ p {
 
 .white-section {
   background-color: #fff;
+  color: #154360;
 }
 /* Navigation Bar */
 .navbar {
@@ -110,7 +157,7 @@ p {
 }
 
 .icon:hover {
-  color: #82E0AA;
+  color: rgba(89, 141, 117, 0.774);
 }
 
 @media (max-width: 1028px) {
@@ -129,6 +176,13 @@ p {
   color: #fff;
   line-height: 1.8;
   color: #154360;
+}
+
+.mission-part {
+  padding: 7% 15%;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.5;
 }
 
 #title .nav-link {
@@ -197,4 +251,81 @@ a:hover {
  /* footer */
 .social-icon {
   margin: 20px 10px;
+}
+
+
+/* reduce your carbon footprint section */
+
+#what {
+  text-align: left;
+  background-color: #BCE6EA;
+}
+
+@media (max-width: 1028px) {
+  #what {
+    text-align: center;
+  }
+}
+
+.video {
+  width: 100%;
+}
+
+#what p {
+  padding: 15px 10px 0px 0px;
+}
+
+#how {
+  text-align: left;
+  background-color: #85C1E9;
+}
+
+#how .section-sub-heading {
+  padding: 5% 0%;
+}
+
+#how p {
+  padding: 5%;
+  font-size: 1.25rem;
+}
+
+.option {
+  background-color: #fff;
+  padding: 2%;
+  margin: 20px;
+
+}
+
+/* Contact */
+#contact {
+  padding: 5% 0 0;
+  position: relative;
+  background-color: #154360;
+}
+
+.contact-section {
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 900;
+}
+
+.contact {
+  font-weight: 400;
+}
+
+iframe {
+  position: sticky;
+  top: 0px;
+  float: right;
+  width: 400px;
+  height: 300px;
+}
+body {
+    cursor: url("l.cur"), default;
+}
+a {
+    cursor: url("select.cur"), default;
+}
+pointer {
+    cursor: url("hleaf.cur"), default;
 }

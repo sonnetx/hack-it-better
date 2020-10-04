@@ -12,6 +12,10 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
 
+
+  <!-- Favicon -->
+  <link rel="icon" href="Hackitbetter_-_logo.ico">
+
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -31,7 +35,7 @@
       <!-- Nav Bar -->
 
       <nav class="navbar navbar-expand-lg navbar-dark">
-        <a class="navbar-brand" href="index.html">Title</a>
+        <a class="navbar-brand" href="index.html">Illustree</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -56,11 +60,13 @@
           </ul>
         </div>
       </nav>
-
-      <!-- form -->
+      
+    </div>
+  
+  <!-- form -->
       <form>
         <fieldset>
-          <legend>Calculate your carbon contribution:</legend>
+          <legend>Calculate your carbon contribution through the way you travel:</legend>
           <!-- <label for="cars">Choose a method of transport:</label>
           <select id="transport" name="transport" size="2">
             <option value="car">Car</option>
@@ -68,18 +74,20 @@
             <option value="biking">Biking</option>
             <option value="bus">Bus</option>
           </select> -->
-          <p>Use the following key in the calculator: One for car, two for bus, and three for biking or walking</p>
-          <label for="cars">Method of Transport:</label><br>
+          <h4>Input the distance in kilometers (without the units) and use the following key in the calculator:</h4><br>
+          <h4> One for car, two for bus, and three for biking or walking.</h4><br>
+          <h4> Inputs should be pure numbers!</h4><br>
+          <label for="cars" class="calculator-section">Method of Transport:</label><br>
           <input type="number" id="transport" value="0"><br><br>
           <br>
-          <label for="time">Kilometers traveled:</label><br>
+          <label for="time" class="calculator-section">Kilometers traveled:</label><br>
           <input type="number" id="minutes" name="minutes" value="0"><br><br>
           <!-- <input type="submit" value="Calculate" onclick="calculate()"> -->
-          <button onclick="calculate()">Calculate</button>
         </fieldset>
+        <button onclick="calculate()" class="btn btn-outline-light btn-lg">Calculate</button>
       </form>
-    </div>
-  
+      
+  </section>
   <!-- Footer -->
 
     <footer class="white-section" id="footer">
@@ -97,6 +105,5 @@
     </footer>
   
 </body>
-
 
 </html>
